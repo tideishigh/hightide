@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function CTA() {
   return (
-    <div className="bg-white w-full">
+    <div className="bg-white w-full px-6">
       <div className="flex flex-col gap-10 items-center max-w-7xl mx-auto py-60">
         <h2 className="text-center text-2xl font-bold text-black sm:text-4xl">Take control of your water consumption.<br/>Reserve early access to our app.</h2>
         <p className="text-center tracking-wide max-w-3xl">Take control of your water consumption with our easy-to-use tracking tool. Monitor your household's water usage in real-time, identify areas of high consumption, and discover opportunities to save.</p>

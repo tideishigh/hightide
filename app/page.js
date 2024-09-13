@@ -1,7 +1,7 @@
 "use client"
 
-import { Button } from '@headlessui/react'
-import CTA from './components/CTA'
+import { Button } from "@headlessui/react"
+import CTA from "./components/CTA"
 
 export default function Homepage() {
   return (
@@ -35,6 +35,28 @@ export default function Homepage() {
         </div>
       </div>
 
+      {/* CEO Testimonial */}
+      <div className="px-6">
+        <div className="max-w-7xl relative isolate mx-auto rounded-3xl shadow-sm overflow-hidden bg-white py-24 sm:py-32">
+          <img 
+            alt=""
+            src="/ceo.jpeg"
+            className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
+          />
+          <div className="absolute inset-0 h-full w-full bg-black -z-10 opacity-40">
+          </div>
+          <div className="px-24 lg:px-30 my-auto text-white flex flex-col gap-8 max-w-4xl">
+            <h3 className="font-medium text-2xl">Make a Splash</h3>
+            <h4 className="font-medium text-xl">“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor consequat at. Vulputate gravida sociis enim nullam ultricies habitant malesuada lorem ac.”</h4>
+            <div>
+              <p className="font-medium">Calvin Nguyen</p>
+              <p>CEO of High Tide AI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Call to Action */}
       <CTA />
     </div>
 

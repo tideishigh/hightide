@@ -3,7 +3,7 @@ import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-white w-full">
+    <footer className="bg-white w-full px-6">
       <div className="flex justify-between max-w-7xl mx-auto items-center border-t-[1px] border-neutral py-10 px-3">
         <p className="text-black text-xs">&copy; Hightide, Inc. All rights reserved.</p>
         <div className="flex gap-6">
