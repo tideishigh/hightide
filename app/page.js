@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@headlessui/react"
+import { FaGift, FaUsers, FaChartBar, FaGlobeAmericas } from "react-icons/fa";
 import CTA from "./components/CTA"
 
 export default function Homepage() {
@@ -32,6 +33,53 @@ export default function Homepage() {
         </div>
         <div>
           <img alt='' src='/ht_blue.png' className=''/>
+        </div>
+      </div>
+
+      {/* Info */}
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 my-44 flex flex-col items-center gap-20">
+        <div className="flex flex-col items-center gap-1">
+          <p className="text-primary font-medium text-lg">Turn the Tide</p>
+          <h3 className="text-center text-2xl font-bold text-black sm:text-4xl mb-6">Discover the power of every drop</h3>
+          <p className="text-center tracking-wide max-w-3xl text-neutral">Our mobile app empowers millions to conserve water and earn rewards. By monitoring your water usage and providing personalized insights, we help you make a positive impact on the planet.</p>
+        </div>
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-20">
+          <div className="flex gap-6 items-start">
+            <div className="p-2 bg-primary rounded mt-1 text-gray">
+              <FaGift size={20} />
+            </div>
+            <div className="flex flex-col gap-2">
+              <h4 className="font-bold text-lg">Reap rewards</h4>
+              <p className="max-w-sm text-neutral leading-7">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</p>
+            </div>
+          </div>
+          <div className="flex gap-6 items-start">
+            <div className="p-2 bg-primary rounded mt-1 text-gray">
+              <FaUsers size={20} />
+            </div>
+            <div className="flex flex-col gap-2">
+              <h4 className="font-bold text-lg">Community driven</h4>
+              <p className="max-w-sm text-neutral leading-7">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</p>
+            </div>
+          </div>
+          <div className="flex gap-6 items-start">
+            <div className="p-2 bg-primary rounded mt-1 text-gray">
+              <FaChartBar size={20} />
+            </div>
+            <div className="flex flex-col gap-2">
+              <h4 className="font-bold text-lg">Water tracking</h4>
+              <p className="max-w-sm text-neutral leading-7">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</p>
+            </div>
+          </div>
+          <div className="flex gap-6 items-start">
+            <div className="p-2 bg-primary rounded mt-1 text-gray">
+              <FaGlobeAmericas size={20} />
+            </div>
+            <div className="flex flex-col gap-2">
+              <h4 className="font-bold text-lg">Make an impact</h4>
+              <p className="max-w-sm text-neutral leading-7">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</p>
+            </div>
+          </div>
         </div>
       </div>
 
