@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from '@headlessui/react'
+import CTA from './components/CTA'
 
 export default function Homepage() {
   return (
@@ -24,9 +25,17 @@ export default function Homepage() {
       </div>
 
       {/* Hero */}
-      <div>
-        
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 my-36 flex items-center">
+        <div className="w-full flex flex-col my-auto gap-8">
+          <h2 className="text-4xl font-bold text-black sm:text-6xl">Introducing<br />High Tide AI</h2>
+          <p className="tracking-wide">Every single time we use our Earth's most precious resource, we must be mindful of our usage. Our mobile app helps monitor, detect and alert millions of water users about how much water you save and earn rewards!</p>
+        </div>
+        <div>
+          <img alt='' src='/ht_blue.png' className=''/>
+        </div>
       </div>
+
+      <CTA />
     </div>
 
   )
