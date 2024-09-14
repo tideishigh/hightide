@@ -14,7 +14,9 @@ export default function Homepage() {
           src="/hero_bg.jpg"
           className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         />
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 my-auto">
+        <div className="absolute inset-0 h-full w-full bg-black opacity-30" />
+
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 my-auto z-10">
           <div className="w-full flex flex-col items-center">
             <h2 className="text-center my-8 text-4xl font-bold tracking-tight text-white sm:text-6xl">Reimagining The Way<br/>We Conserve Water</h2>
             <h3 className="text-center my-8 text-2xl font-medium tracking-tight text-white sm:text-4xl">Introducing a New Era of Water Conservation</h3>
@@ -93,8 +95,8 @@ export default function Homepage() {
             src="/ceo.jpeg"
             className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
           />
-          <div className="absolute inset-0 h-full w-full bg-black -z-10 opacity-40">
-          </div>
+          <div className="absolute inset-0 h-full w-full bg-black -z-10 opacity-40" />
+
           <div className="px-24 lg:px-30 my-auto text-white flex flex-col gap-8 max-w-4xl">
             <h3 className="font-medium text-2xl">Make a Splash</h3>
             <h4 className="font-medium text-xl">“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor consequat at. Vulputate gravida sociis enim nullam ultricies habitant malesuada lorem ac.”</h4>
