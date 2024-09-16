@@ -3,16 +3,22 @@
 import { Button } from "@headlessui/react"
 import { FaGift, FaUsers, FaChartBar, FaGlobeAmericas } from "react-icons/fa";
 import CTA from "./components/CTA"
+import Hero from "./components/Hero";
+import Image from "next/image";
 
-export default function Homepage() {
+export default function HomePage() {
   return (
     <div>
       {/* Main Hero Section */}
       <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32 h-screen flex flex-col">
-        <img
+        <Image
           alt=""
           src="/hero_bg.jpg"
           className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+          priority
+          width={6000}
+          height={4000}
+          objectFit="cover"
         />
         <div className="absolute inset-0 h-full w-full bg-black opacity-30" />
 
@@ -28,17 +34,12 @@ export default function Homepage() {
       </div>
 
       {/* Hero */}
-      <div className="relative isolate overflow-hidden mx-auto max-w-7xl px-6 lg:px-8 py-36 flex items-center">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(35rem_40rem_at_top,theme(colors.primary),white)] opacity-20" />
-        <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-primary-600/10 ring-primary-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
-        <div className="w-full flex flex-col my-auto gap-8">
-          <h2 className="text-4xl font-bold text-black sm:text-6xl">Introducing<br />High Tide AI</h2>
-          <p className="tracking-wide">Every single time we use our Earth's most precious resource, we must be mindful of our usage. Our mobile app helps monitor, detect and alert millions of water users about how much water you save and earn rewards!</p>
-        </div>
-        <div>
-          <img alt='' src='/ht_blue.png' className=''/>
-        </div>
-      </div>
+      <Hero
+        header={`Introducing\nHigh Tide AI`}
+        para="Every single time we use our Earth's most precious resource, we must be mindful of our usage. Our mobile app helps monitor, detect and alert millions of water users about how much water you save and earn rewards!"
+        imgSrc="/ht_blue.png"
+        imgAlt=""
+      />
 
       {/* Info */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8 my-44 flex flex-col items-center gap-20">
@@ -97,7 +98,7 @@ export default function Homepage() {
           />
           <div className="absolute inset-0 h-full w-full bg-black -z-10 opacity-40" />
 
-          <div className="px-24 lg:px-30 my-auto text-white flex flex-col gap-8 max-w-4xl">
+          <div className="px-10 md:px-20 lg:px-30 my-auto text-white flex flex-col gap-8 max-w-4xl">
             <h3 className="font-medium text-2xl">Make a Splash</h3>
             <h4 className="font-medium text-xl">“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor consequat at. Vulputate gravida sociis enim nullam ultricies habitant malesuada lorem ac.”</h4>
             <div>

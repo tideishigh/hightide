@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import {
   Dialog,
   DialogPanel,
@@ -16,6 +17,9 @@ export default function Header() {
   const [nav, setNav] = useState('fixed')
   const [scrollTop, setScrollTop] = useState(0)
   const [oldTop, setOldTop] = useState(0)
+  const pathname = usePathname()
+
+  console.log(pathname)
 
   useEffect(() => {
     const handleScroll = (event) => {
@@ -71,12 +75,12 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={`bg-white fixed z-10 w-full top-[-1rem] ${nav} ${scrollTop == 0 ? 'shadow-none bg-opacity-0' : 'shadow-lg bg-opacity-80'} transition-all duration-300 ease-in-out`}>
+    <header className={`bg-white fixed z-10 w-full top-[-1rem] ${nav} ${scrollTop == 0 && pathname == "/" ? 'shadow-none bg-opacity-0' : 'shadow-lg bg-opacity-80'} transition-all duration-300 ease-in-out`}>
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-1 lg:px-3">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Hightide</span>
-            <img alt="Hightide" src={`${scrollTop == 0 ? "/hightide_logo_white.png" : "/hightide_logo.png"}`} className="h-10 p-1 w-auto" />
+            <img alt="Hightide" src={`${scrollTop == 0 && pathname == "/" ? "/hightide_logo_white.png" : "/hightide_logo.png"}`} className="h-10 p-1 w-auto" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -86,17 +90,17 @@ export default function Header() {
             className=" inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className={`h-6 w-6 ${scrollTop == 0 ? "text-white" : "text-black"}`} />
+            <Bars3Icon aria-hidden="true" className={`h-6 w-6 ${scrollTop == 0 && pathname == "/" ? "text-white" : "text-black"}`} />
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-4">
-          <a href="#" className={`text-sm font-semibold leading-6 hover:bg-black hover:bg-opacity-20 py-1 px-3 rounded ${scrollTop == 0 ? "text-white" : "text-black"}`}>
+          <a href="/about" className={`text-sm font-semibold leading-6 hover:bg-black hover:bg-opacity-10 py-1 px-3 rounded ${scrollTop == 0 && pathname == "/" ? "text-white" : "text-black"}`}>
             About
           </a>
-          <a href="#" className={`text-sm font-semibold leading-6 hover:bg-black hover:bg-opacity-20 py-1 px-3 rounded ${scrollTop == 0 ? "text-white" : "text-black"}`}>
+          <a href="/features" className={`text-sm font-semibold leading-6 hover:bg-black hover:bg-opacity-10 py-1 px-3 rounded ${scrollTop == 0 && pathname == "/" ? "text-white" : "text-black"}`}>
             Features
           </a>
-          <a href="#" className={`text-sm font-semibold leading-6 hover:bg-black hover:bg-opacity-20 py-1 px-3 rounded ${scrollTop == 0 ? "text-white" : "text-black"}`}>
+          <a href="/company" className={`text-sm font-semibold leading-6 hover:bg-black hover:bg-opacity-10 py-1 px-3 rounded ${scrollTop == 0 && pathname == "/" ? "text-white" : "text-black"}`}>
             Company
           </a>
         </PopoverGroup>
@@ -131,19 +135,19 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="#"
+                  href="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-black hover:bg-gray-50"
                 >
                   About
                 </a>
                 <a
-                  href="#"
+                  href="/features"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-black hover:bg-gray-50"
                 >
                   Features
                 </a>
                 <a
-                  href="#"
+                  href="/company"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-black hover:bg-gray-50"
                 >
                   Company
