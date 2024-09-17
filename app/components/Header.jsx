@@ -53,16 +53,7 @@ export default function Header() {
         var elementVisible = 200
         if (elementTop < windowHeight - elementVisible) {
           reveals[i].classList.add("active")
-          Array.from(reveals[i].children).forEach(child => {
-            // setTimeout(() => {
-            //   child.classList.add("reveal")
-            //   child.classList.add("active")
-            // }, 500)
-          })
-        } 
-        // else {
-        //   reveals[i].classList.remove("active")
-        // }
+        }
       }
     }
 
@@ -99,9 +90,6 @@ export default function Header() {
           </a>
           <a href="/features" className={`text-sm font-semibold leading-6 hover:bg-black hover:bg-opacity-10 py-1 px-3 rounded ${scrollTop == 0 && pathname == "/" ? "text-white" : "text-black"}`}>
             Features
-          </a>
-          <a href="/company" className={`text-sm font-semibold leading-6 hover:bg-black hover:bg-opacity-10 py-1 px-3 rounded ${scrollTop == 0 && pathname == "/" ? "text-white" : "text-black"}`}>
-            Company
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -145,12 +133,6 @@ export default function Header() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-black hover:bg-gray-50"
                 >
                   Features
-                </a>
-                <a
-                  href="/company"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-black hover:bg-gray-50"
-                >
-                  Company
                 </a>
               </div>
               <div className="py-6">

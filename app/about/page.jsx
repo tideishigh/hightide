@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import TeamCard from "../components/TeamCard";
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -35,6 +36,33 @@ export default function AboutPage() {
             alt=""
             src="/ceo.jpeg"
             className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
+          />
+        </div>
+      </div>
+
+      <div className="max-w-7xl px-6 mx-auto my-44 w-full flex flex-col gap-10">
+        <h3 className="text-4xl font-semibold">Our team</h3>
+        <p className="text-xl text-neutral tracking-wide leading-8 max-w-2xl">Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.</p>
+        <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between gap-y-10">
+          <TeamCard
+            name="Calvin Nguyen"
+            title="CEO / Founder"
+            imgSrc="/headshot.jpg"
+          />
+          <TeamCard
+            name="Isaiah Aquino"
+            title="Web Developer"
+            imgSrc="/headshot.jpg"
+          />
+          <TeamCard
+            name="Precious Nguyen"
+            title="Markting Director"
+            imgSrc="/headshot.jpg"
+          />
+          <TeamCard
+            name="Jaqy Nguyen"
+            title="Project Manager"
+            imgSrc="/headshot.jpg"
           />
         </div>
       </div>

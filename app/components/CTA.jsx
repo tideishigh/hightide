@@ -10,7 +10,7 @@ export default function CTA() {
         <p className="text-center tracking-wide max-w-3xl">Take control of your water consumption with our easy-to-use tracking tool. Monitor your household's water usage in real-time, identify areas of high consumption, and discover opportunities to save.</p>
         <div className="flex items-center gap-6">
           <Link href="" className="inline-flex items-center gap-2 rounded-md bg-primary py-2 px-4 text-sm/6 font-semibold text-white hover:bg-primary-light transition-all duration-200 ease-in-out">Get started</Link>
-          <Link href="" className="inline-flex items-center gap-2 text-sm/6 font-semibold">Learn more <FaArrowRight size={12}/></Link>
+          <Link href="/about" className="inline-flex items-center gap-2 text-sm/6 font-semibold">Learn more <FaArrowRight size={12}/></Link>
         </div>
       </div>
     </div>
