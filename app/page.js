@@ -5,6 +5,8 @@ import { FaGift, FaUsers, FaChartBar, FaGlobeAmericas } from "react-icons/fa";
 import CTA from "./components/CTA"
 import Hero from "./components/Hero";
 import Image from "next/image";
+import heroBG from "../public/hero_bg.jpg"
+import ceo from "../public/ceo.jpeg"
 
 export default function HomePage() {
   return (
@@ -13,12 +15,9 @@ export default function HomePage() {
       <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32 h-screen flex flex-col">
         <Image
           alt=""
-          src="/hero_bg.jpg"
+          src={heroBG}
           className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
           priority
-          width={6000}
-          height={4000}
-          objectFit="cover"
         />
         <div className="absolute inset-0 h-full w-full bg-black opacity-30" />
 
@@ -91,9 +90,9 @@ export default function HomePage() {
       {/* CEO Testimonial */}
       <div className="px-6">
         <div className="max-w-7xl relative isolate mx-auto rounded-3xl shadow-sm overflow-hidden bg-white py-24 sm:py-32">
-          <img 
+          <Image 
             alt=""
-            src="/ceo.jpeg"
+            src={ceo}
             className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
           />
           <div className="absolute inset-0 h-full w-full bg-black -z-10 opacity-40" />

@@ -2,6 +2,9 @@ import Hero from "../components/Hero";
 import TeamCard from "../components/TeamCard";
 import Image from "next/image";
 
+import ceo from "../../public/ceo.jpeg"
+import mission from "../../public/mission.jpg"
+
 export default function AboutPage() {
   return (
     <div className="">
@@ -12,30 +15,30 @@ export default function AboutPage() {
         imgAlt=""
       />
 
-      <div className="flex max-w-7xl px-6 mx-auto my-20 items-center justify-between flex-col md:flex-row-reverse">
+      <div className="flex max-w-7xl px-6 mx-auto my-20 items-center justify-between flex-col md:flex-row gap-20 md:gap-0">
+        <div className="max-w-2xl md:pr-20 lg:pr-40 rounded-2xl">
+          <Image
+            src={mission}
+            alt=""
+            className="rounded-2xl"
+            priority
+          />
+        </div>
         <div className="flex flex-col gap-8">
           <h3 className="text-4xl font-semibold">Our mission</h3>
           <p className="text-xl text-neutral tracking-wide leading-8">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.</p>
           <p className="text-neutral leading-8">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.</p>
           <p className="text-neutral leading-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
         </div>
-        <div className="max-w-2xl pr-40 rounded-2xl">
-          <Image
-            src="/mission.jpg"
-            alt=""
-            width="3939"
-            height="4924"
-            className="rounded-2xl"
-          />
-        </div>
       </div>
 
       <div className="px-6 my-44">
         <div className="max-w-7xl relative isolate h-[30rem] mx-auto rounded-3xl shadow-sm overflow-hidden bg-white py-24 sm:py-32">
-          <img 
+          <Image 
             alt=""
-            src="/ceo.jpeg"
+            src={ceo}
             className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
+            priority
           />
         </div>
       </div>
