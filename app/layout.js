@@ -1,6 +1,8 @@
+import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import "./globals.css";
 
 export const metadata = {
   title: "Hightide",
@@ -17,6 +19,7 @@ export default function RootLayout({ children }) {
         <Header />
 
         {children}
+        <SpeedInsights />
 
         <Footer />
       </body>
