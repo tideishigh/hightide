@@ -9,8 +9,8 @@ export default function AboutPage() {
   return (
     <div className="">
       <Hero
-        header={`We're changing the\nway people save water`}
-        para="Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt mollit id pariatur in voluptate cillum. Eu voluptate tempor esse minim amet fugiat veniam occaecat aliqua."
+        header={`Re-imagining Water Conservation through Technology and Gamification`}
+        para="At High Tide AI, we believe in turning everyday actions into meaningful solutions. Did you know that by 2030, water is expected to be scarcer than oil, with demand exceeding supply by 40%? With less than 1% of the earth&apos;s water fit for human consumption, it&apos;s time to take action, and we&apos;re here to help you do that in a fun and rewarding way."
         imgSrc=""
         imgAlt=""
       />
@@ -25,10 +25,10 @@ export default function AboutPage() {
           />
         </div>
         <div className="flex flex-col gap-8">
-          <h3 className="text-4xl font-semibold">Our mission</h3>
-          <p className="text-xl text-neutral tracking-wide leading-8">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.</p>
-          <p className="text-neutral leading-8">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.</p>
-          <p className="text-neutral leading-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
+          <h3 className="text-4xl font-semibold">Our story</h3>
+          <p className="text-lg text-neutral tracking-wide leading-8">Founded in 2024 by Calvin Nguyen, High Tide AI was born out of personal experience and a passion for making a difference. Growing up in financial hardship, Calvin saw firsthand the importance of conserving resources, especially water. This led him to develop High Tide AI—a platform designed to help homeowners, businesses, and farmers save water and earn rewards while doing it.</p>
+          <p className="text-neutral leading-8">Through our gamified mobile app, High Tide AI offers a unique way to conserve water. Users receive real-time notifications on their water usage, learn how to save more, and even compete with their neighbors to see who can conserve the most water. The more water you save, the bigger your rewards—ranging from rebates to discounts on water-saving devices.</p>
+          <p className="text-neutral leading-8">While other water-saving apps exist, High Tide AI is the only one that combines gamification, social engagement, and real-time data to incentivize mindful water use. We are not just an app; we&apos;re a movement that helps you make a tangible impact on the planet while having fun and earning rewards along the way.</p>
         </div>
       </div>
 
@@ -43,10 +43,10 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl px-6 mx-auto my-44 w-full flex flex-col gap-10">
+      <div className="max-w-7xl px-6 mx-auto my-44 w-full flex flex-col gap-8">
         <h3 className="text-4xl font-semibold">Our team</h3>
-        <p className="text-xl text-neutral tracking-wide leading-8 max-w-2xl">Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.</p>
-        <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between gap-y-10">
+        <p className="text-xl text-neutral tracking-wide leading-8 max-w-4xl">We&apos;re a dynamic group of individuals who are passionate about what we do.</p>
+        <div className="grid grid-col-1 mx-auto sm:mx-0 mt-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between gap-y-10">
           <TeamCard
             name="Calvin Nguyen"
             title="CEO / Founder"

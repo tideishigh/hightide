@@ -53,8 +53,8 @@ export default function HomePage() {
               <FaGift size={20} />
             </div>
             <div className="flex flex-col gap-2">
-              <h4 className="font-bold text-lg">Reap rewards</h4>
-              <p className="max-w-sm text-neutral leading-7">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</p>
+              <h4 className="font-bold text-lg">Rewards system</h4>
+              <p className="max-w-sm text-neutral leading-7">Earn rebates, utility credits, and discounts on eco-friendly products.</p>
             </div>
           </div>
           <div className="flex gap-6 items-start">
@@ -63,7 +63,7 @@ export default function HomePage() {
             </div>
             <div className="flex flex-col gap-2">
               <h4 className="font-bold text-lg">Community driven</h4>
-              <p className="max-w-sm text-neutral leading-7">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</p>
+              <p className="max-w-sm text-neutral leading-7">Compete with your neighbors or friends in fun challenges to see who can save the most water.</p>
             </div>
           </div>
           <div className="flex gap-6 items-start">
@@ -72,7 +72,7 @@ export default function HomePage() {
             </div>
             <div className="flex flex-col gap-2">
               <h4 className="font-bold text-lg">Water tracking</h4>
-              <p className="max-w-sm text-neutral leading-7">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</p>
+              <p className="max-w-sm text-neutral leading-7">Track and manage your water usage with instant updates.</p>
             </div>
           </div>
           <div className="flex gap-6 items-start">
@@ -80,8 +80,8 @@ export default function HomePage() {
               <FaGlobeAmericas size={20} />
             </div>
             <div className="flex flex-col gap-2">
-              <h4 className="font-bold text-lg">Make an impact</h4>
-              <p className="max-w-sm text-neutral leading-7">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</p>
+              <h4 className="font-bold text-lg">Simple integration</h4>
+              <p className="max-w-sm text-neutral leading-7">Scan your water bill, and let our AI-powered app calculate your savings and potential rewards instantly.</p>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function HomePage() {
 
           <div className="px-10 md:px-20 lg:px-30 my-auto text-white flex flex-col gap-8 max-w-4xl">
             <h3 className="font-medium text-2xl">Make a Splash</h3>
-            <h4 className="font-medium text-xl">“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor consequat at. Vulputate gravida sociis enim nullam ultricies habitant malesuada lorem ac.”</h4>
+            <h4 className="font-medium text-xl">“High Tide AI operates on a freemium model. Users can download the app for free and access basic features, with premium subscriptions unlocking enhanced tools, personalized insights, and even more rewards. Whether it&apos;s saving money on your water bill or contributing to a larger environmental cause, our app makes every drop count.”</h4>
             <div>
               <p className="font-medium">Calvin Nguyen</p>
               <p>CEO of High Tide AI</p>

@@ -2,12 +2,12 @@ import Image from "next/image"
 
 export default function TeamCard({ name, title, imgSrc}) {
   return (
-    <div className="w-[250px]">
+    <div className="w-[230px]">
       <Image
         alt=""
         src={imgSrc}
-        height="250"
-        width="250"
+        height="230"
+        width="230"
         objectFit="cover"
         className="rounded-2xl mb-6"
       />
