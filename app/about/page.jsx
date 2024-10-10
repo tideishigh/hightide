@@ -50,22 +50,22 @@ export default function AboutPage() {
           <TeamCard
             name="Calvin Nguyen"
             title="CEO / Founder"
-            imgSrc="/headshot.jpg"
+            imgSrc="/default.jpg"
           />
           <TeamCard
             name="Isaiah Aquino"
             title="Web Developer"
-            imgSrc="/headshot.jpg"
+            imgSrc="/default.jpg"
           />
           <TeamCard
             name="Precious Nguyen"
             title="Markting Director"
-            imgSrc="/headshot.jpg"
+            imgSrc="/default.jpg"
           />
           <TeamCard
             name="Jaqy Nguyen"
             title="Project Manager"
-            imgSrc="/headshot.jpg"
+            imgSrc="/default.jpg"
           />
         </div>
       </div>
