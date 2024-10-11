@@ -18,7 +18,7 @@ export default function CTA() {
     });
 
     const content = await res.json();
-    console.log(content.data.updates.updatedRange)
+    alert("Thank you for signing up!")
     setEmail("");
   }
 
