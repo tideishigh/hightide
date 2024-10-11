@@ -1,6 +1,7 @@
 "use client"
 
-import { Button } from "@headlessui/react"
+
+import Link from "next/link";
 import { FaGift, FaUsers, FaChartBar, FaGlobeAmericas } from "react-icons/fa";
 import CTA from "./components/CTA"
 import Hero from "./components/Hero";
@@ -25,9 +26,13 @@ export default function HomePage() {
           <div className="w-full flex flex-col items-center">
             <h2 className="text-center my-8 text-4xl font-bold tracking-tight text-white sm:text-6xl">Reimagining The Way<br/>We Conserve Water</h2>
             <h3 className="text-center my-8 text-2xl font-medium tracking-tight text-white sm:text-4xl">Introducing a New Era of Water Conservation</h3>
-            <Button className="my-8 inline-flex items-center gap-2 rounded-md bg-white py-2 px-10 text-sm/6 font-semibold text-black shadow-inner shadow-white/10 focus:outline-none data-[open]:bg-gray data-[focus]:outline-1 data-[focus]:outline-white">
+            <Link 
+              className="my-8 inline-flex items-center gap-2 rounded-md bg-white py-2 px-10 text-sm/6 font-semibold text-black shadow-inner shadow-white/10 focus:outline-none data-[open]:bg-gray data-[focus]:outline-1 data-[focus]:outline-white"
+              href="#newsletter"
+              scroll={true}
+            >
               Reserve Early Access
-            </Button>
+            </Link>
           </div>
         </div>
       </div>
