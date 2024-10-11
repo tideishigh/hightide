@@ -59,11 +59,11 @@ export default function AboutPage() {
           />
           <TeamCard
             name="Precious Nguyen"
-            title="Markting Director"
+            title="Marketing Director"
             imgSrc="/default.jpg"
           />
           <TeamCard
-            name="Jaqy Nguyen"
+            name="Jacqeline Nguyen"
             title="Project Manager"
             imgSrc="/default.jpg"
           />
