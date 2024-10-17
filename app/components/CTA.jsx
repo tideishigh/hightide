@@ -40,7 +40,7 @@ export default function CTA() {
             autoComplete="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
-            className="min-w-80 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-neutral focus:ring-inset sm:text-sm sm:leading-6"
+            className="min-w-60 sm:min-w-80 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-neutral focus:ring-inset sm:text-sm sm:leading-6"
           />
           <button
             type="submit"
