@@ -55,7 +55,7 @@ export default function AboutPage() {
           <TeamCard
             name="Isaiah Aquino"
             title="Web Developer"
-            imgSrc="/isaiah.JPG"
+            imgSrc="/isaiah.jpg"
           />
           <TeamCard
             name="Precious Nguyen"
